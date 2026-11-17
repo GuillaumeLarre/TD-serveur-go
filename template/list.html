@@ -1,0 +1,10 @@
+{{template "header"}}
+            <h1>Liste des artistes</h1>
+            <ul>
+                {{range .}}
+                <li>{{.Name}}</li>
+                {{else}}
+                <li>Aucun artiste trouvé</li>
+                {{end}}
+            </ul>
+    {{template "footer"}}
